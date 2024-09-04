@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <meta charset="UTF-8">
+        <script src="{{url_for('static', filename='jquery-2.2.2.min.js')}}"></script>
+        <script src="{{url_for('static', filename='index.js')}}"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+        <title>SampleSiteCh</title>
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+    <body bgcolor="#fffacd">
+        <div></div>
+        <div class="chTitle"><img src="{{url_for('static', filename='sampleTitle.PNG')}}"></div>
+        <table border="1" cellspacing="7" cellpadding="3" width="95%" bgcolor="#CCFFCC" align="center">
+            <tbody><tr><td>
+                <b>自由に書き込もう＠XXXXXちゃんねる</b>
+                <p>仕事中に思うことを何でも書いてOK</p>
+                <p>雑談・困りごと・つぶやき・愚痴などなど</p>
+                <p>↓こちらにアクセス</p>
+                <p>http://xxx.xxx.x.xxx:5000/SampleSiteCh</p>
+            </td></tr></tbody>
+        </table>
+        <table border="1" cellspacing="7" cellpadding="3" width="95%" bgcolor="#EFEFEF" align="center">
+            <tbody><tr><td>
+                <p id="output"></p>
+                <p>
+                    <label><b>■名前</b></label><br>
+                    <textarea type="text" id="name" style="margin: 0px; width: 100px; height: 20px;"></textarea><br>
+                    <label><b>■内容</b></label><br>
+                    <textarea type="text" id="inputText" style="margin: 0px; width: 250px; height: 100px;"></textarea><br>
+                    <button id="postBtn">書き込む</button>
+                </p>
+            </td></tr></tbody>
+        </table>
+    </body>
+</html>
