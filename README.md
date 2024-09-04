@@ -35,9 +35,6 @@ ts\Activate.ps1 を読み込むことができません。詳細については�
 powershell -ExecutionPolicy RemoteSigned
 ```
 
-# 練習問題
-- https://atcoder.jp/contests/tessoku-book/tasks
-
 # コード整形(実行例)
 ```
 isort app.py
