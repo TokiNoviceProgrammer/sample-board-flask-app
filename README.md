@@ -35,6 +35,11 @@ ts\Activate.ps1 を読み込むことができません。詳細については�
 powershell -ExecutionPolicy RemoteSigned
 ```
 
+# 仮想環境から出る
+```
+deactivate
+```
+
 # コード整形(実行例)
 ```
 isort app.py
